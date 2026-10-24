@@ -48,7 +48,6 @@
     "version": "1.5.1",
     "category": "أدوات",
     "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/downloader.1.5.1.apk",
-    "icon": "",
-    "color": "#ff0000"
+    "icon": "img/downloader.png"
     }
 ]
