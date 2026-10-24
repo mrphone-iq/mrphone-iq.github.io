@@ -1,8 +1,47 @@
 [
-  {"name": "Cinemana", "version": "4.5.10", "category": "العراق", "file": "Cinemana Leanback 4.5.10.apk", "icon": "", "color": "#e53935"},
-  {"name": "CEE TV", "version": "latest", "category": "العراق", "file": "cee_leanback_last.apk", "icon": "", "color": "#1e88e5"},
-  {"name": "Vodu", "version": "2.0.00", "category": "العراق", "file": "Vodu 2.0.00.apk", "icon": "", "color": "#8e24aa"},
-  {"name": "APKPure", "version": "3.20.42", "category": "أدوات", "file": "APKPure 3.20.42.apk", "icon": "img/apkpure.png"},
-  {"name": "X-plore", "version": "4.46.00", "category": "أدوات", "file": "X-plore 4.46.00.apk", "icon": "img/xplore.png"},
-  {"name": "مدير الملفات", "version": "3.8.3", "category": "أدوات", "file": "مدير الملفات  3.8.3.apk", "icon": "img/filemanager.png"}
+  {
+    "name": "Cinemana",
+    "version": "4.5.10",
+    "category": "العراق",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/Cinemana.Leanback.4.5.10.apk",
+    "icon": "",
+    "color": "#e53935"
+  },
+  {
+    "name": "CEE TV",
+    "version": "latest",
+    "category": "العراق",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/cee_leanback_last.apk",
+    "icon": "",
+    "color": "#1e88e5"
+  },
+  {
+    "name": "Vodu",
+    "version": "2.0.00",
+    "category": "العراق",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/vodu.apk",
+    "icon": "",
+    "color": "#8e24aa"
+  },
+  {
+    "name": "APKPure",
+    "version": "3.20.42",
+    "category": "أدوات",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/APKPure.3.20.42.apk",
+    "icon": "img/apkpure.png"
+  },
+  {
+    "name": "X-plore",
+    "version": "4.46.00",
+    "category": "أدوات",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/X-plore.4.46.00.apk",
+    "icon": "img/xplore.png"
+  },
+  {
+    "name": "مدير الملفات",
+    "version": "3.8.3",
+    "category": "أدوات",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/File.Maneger.3.8.3.apk",
+    "icon": "img/filemanager.png"
+  }
 ]

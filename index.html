@@ -54,7 +54,7 @@ function render() {
       </div>
       <div class="name">${a.name}</div>
       <div class="ver">v ${a.version}</div>
-      <a class="dl" href="apps/${encodeURIComponent(a.file)}" download>تحميل</a>
+      <a class="dl" href="${a.file}">تحميل</a>
     </div>`).join('');
 }
 fetch('apps.json?' + Date.now()).then(r => r.json()).then(d => { apps = d; render(); const f = document.querySelector('.dl'); if (f) f.focus(); });
