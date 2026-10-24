@@ -4,7 +4,7 @@
     "version": "4.5.10",
     "category": "العراق",
     "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/Cinemana.Leanback.4.5.10.apk",
-    "icon": "",
+    "icon": "img/Cinemana.jpg",
     "color": "#e53935"
   },
   {
@@ -13,7 +13,6 @@
     "category": "العراق",
     "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/cee_leanback_last.apk",
     "icon": "",
-    "color": "#1e88e5"
   },
   {
     "name": "Vodu",
