@@ -17,7 +17,7 @@
     "name": "Vodu",
     "version": "2.0.00",
     "category": "العراق",
-    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/vodu.apk",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/vodu.2.0.apk",
     "icon": "",
     "color": "#8e24aa"
   },
@@ -36,10 +36,17 @@
     "icon": "img/xplore.png"
   },
   {
-  "name": "downloader",
+    "name": "مدير الملفات",
+    "version": "3.8.3",
+    "category": "أدوات",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/File.Maneger.3.8.3.apk",
+    "icon": "img/filemanager.png"
+  },
+  {
+    "name": "downloader",
     "version": "1.5.1",
     "category": "أدوات",
     "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/downloader.1.5.1.apk",
     "icon": "img/downloader.png"
-    }
+  }
 ]
