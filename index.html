@@ -4,127 +4,60 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>متجر مستر فون</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#0b0b0c; --panel:#161618; --panel2:#1f1f22; --line:#2c2c30;
-    --orange:#ff7a1a; --orange2:#ffa04d; --text:#f5f5f5; --muted:#9a9aa2;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--text);font-family:"Cairo",system-ui,sans-serif}
-  body{padding:24px 32px 48px}
-  header{display:flex;align-items:center;gap:18px;margin-bottom:22px}
-  .logo{width:76px;height:76px;border-radius:20px;background:#000;border:2px solid var(--orange);
-        display:grid;place-items:center;overflow:hidden;flex:none}
-  .logo img{width:100%;height:100%;object-fit:cover}
-  .logo span{font-weight:800;color:var(--orange);font-size:30px}
-  h1{margin:0;font-size:34px;font-weight:800;line-height:1.2}
-  h1 b{color:var(--orange)}
-  .sub{color:var(--muted);font-size:17px;margin-top:2px}
-
-  .tabs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 24px}
-  .tab{background:var(--panel);color:var(--text);border:2px solid var(--line);border-radius:999px;
-       padding:10px 22px;font:600 18px "Cairo",sans-serif;cursor:pointer}
-  .tab.on{background:var(--orange);border-color:var(--orange);color:#111}
-
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
-  .card{background:var(--panel);border:2px solid var(--line);border-radius:20px;padding:18px;
-        display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit;outline:none;
-        transition:transform .12s, border-color .12s, background .12s}
-  .top{display:flex;align-items:center;gap:14px}
-  .icon{width:68px;height:68px;border-radius:16px;background:var(--panel2);flex:none;
-        display:grid;place-items:center;overflow:hidden;font-weight:800;font-size:28px;color:var(--orange)}
-  .icon img{width:100%;height:100%;object-fit:cover}
-  .name{font-size:21px;font-weight:800;line-height:1.25;word-break:break-word}
-  .ver{color:var(--muted);font-size:15px;direction:ltr;text-align:right}
-  .note{color:#c9c9cf;font-size:15px;min-height:1em}
-  .btn{margin-top:auto;background:var(--panel2);border-radius:12px;padding:12px;text-align:center;
-       font-weight:800;font-size:19px;color:var(--orange)}
-  .card:focus,.card:hover{border-color:var(--orange);background:#1d1a17;transform:scale(1.04)}
-  .card:focus .btn,.card:hover .btn{background:var(--orange);color:#111}
-  .tab:focus{outline:3px solid var(--orange2);outline-offset:3px}
-  .empty{color:var(--muted);font-size:20px;padding:40px 0}
-  footer{margin-top:36px;color:var(--muted);font-size:15px;text-align:center}
-
-  @media (max-width:560px){
-    body{padding:16px}
-    h1{font-size:26px}
-    .grid{grid-template-columns:1fr}
-  }
+  :root { --bg:#0b0b0b; --card:#1a1a1a; --orange:#ff7a00; --text:#fff; --muted:#aaa; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:Tahoma, Arial, sans-serif; }
+  header { padding:24px 32px; border-bottom:3px solid var(--orange); display:flex; align-items:center; gap:16px; }
+  .logo { width:56px; height:56px; border-radius:14px; background:var(--orange); color:#000; font-size:30px; font-weight:bold; display:flex; align-items:center; justify-content:center; }
+  h1 { margin:0; font-size:30px; }
+  h1 span { color:var(--orange); }
+  header p { margin:4px 0 0; color:var(--muted); }
+  nav { padding:16px 32px; display:flex; gap:12px; flex-wrap:wrap; }
+  nav button, .dl { font:inherit; border:2px solid transparent; cursor:pointer; outline:none; }
+  nav button { background:var(--card); color:var(--text); padding:10px 22px; border-radius:24px; font-size:18px; }
+  nav button.on { background:var(--orange); color:#000; font-weight:bold; }
+  main { padding:8px 32px 40px; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:20px; }
+  .card { background:var(--card); border-radius:16px; padding:20px; text-align:center; }
+  .icon { width:96px; height:96px; border-radius:20px; margin:0 auto 12px; display:flex; align-items:center; justify-content:center; font-size:44px; font-weight:bold; background:#fff; overflow:hidden; }
+  .icon img { width:100%; height:100%; object-fit:contain; }
+  .name { font-size:20px; font-weight:bold; }
+  .ver { color:var(--muted); margin:4px 0 14px; direction:ltr; }
+  .dl { display:block; width:100%; padding:12px; border-radius:10px; background:var(--orange); color:#000; font-size:18px; font-weight:bold; text-decoration:none; }
+  nav button:focus, .dl:focus { border-color:#fff; transform:scale(1.06); box-shadow:0 0 0 4px rgba(255,122,0,.5); }
+  footer { text-align:center; color:var(--muted); padding:20px; }
+  @media (max-width:600px) { header, nav, main { padding-left:16px; padding-right:16px; } main { grid-template-columns:repeat(2, 1fr); gap:12px; } }
 </style>
 </head>
 <body>
 <header>
-  <div class="logo" id="logo"><span>MP</span></div>
+  <div class="logo">M</div>
   <div>
-    <h1>متجر <b>مستر فون</b></h1>
-    <div class="sub">اختار التطبيق واضغط OK حتى ينزل</div>
+    <h1>متجر <span>مستر فون</span></h1>
+    <p>اضغط تحميل وبعدين تثبيت</p>
   </div>
 </header>
-
-<nav class="tabs" id="tabs"></nav>
-<main class="grid" id="grid"></main>
-<footer>مستر فون · تطبيقات البوكسات والتلفزيونات</footer>
-
+<nav id="cats"></nav>
+<main id="apps"></main>
+<footer>مستر فون - Mister Phone</footer>
 <script>
-const REPO = "MustafaAsaad85/store";
-const TAG  = "apps";
-const dl = f => /^https?:/.test(f) ? f : `https://github.com/${REPO}/releases/download/${TAG}/${encodeURIComponent(f)}`;
-
-// شعار المحل: إذا انرفع ملف logo.png يطلع بدل الحروف
-(() => { const i = new Image(); i.onload = () => { const l = document.getElementById("logo"); l.innerHTML = ""; l.appendChild(i); }; i.alt = "مستر فون"; i.src = "logo.png"; })();
-
-let apps = [], current = "الكل";
-
-function esc(s){ return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
-
-function renderTabs(){
-  const cats = ["الكل", ...new Set(apps.map(a => a.category).filter(Boolean))];
-  const t = document.getElementById("tabs");
-  t.innerHTML = cats.map(c => `<button class="tab${c===current?" on":""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
-  t.querySelectorAll(".tab").forEach(b => b.onclick = () => { current = b.dataset.c; renderTabs(); renderGrid(); });
+let apps = [], cat = 'الكل';
+function render() {
+  const cats = ['الكل', ...new Set(apps.map(a => a.category))];
+  document.getElementById('cats').innerHTML = cats.map(c =>
+    `<button class="${c === cat ? 'on' : ''}" data-c="${c}">${c}</button>`).join('');
+  document.querySelectorAll('#cats button').forEach(b => b.onclick = () => { cat = b.dataset.c; render(); });
+  document.getElementById('apps').innerHTML = apps.filter(a => cat === 'الكل' || a.category === cat).map(a => `
+    <div class="card">
+      <div class="icon" style="${a.icon ? '' : 'background:' + (a.color || '#ff7a00') + ';color:#fff'}">
+        ${a.icon ? `<img src="${a.icon}" alt="">` : a.name.charAt(0)}
+      </div>
+      <div class="name">${a.name}</div>
+      <div class="ver">v ${a.version}</div>
+      <a class="dl" href="apps/${encodeURIComponent(a.file)}" download>تحميل</a>
+    </div>`).join('');
 }
-
-function renderGrid(){
-  const g = document.getElementById("grid");
-  const list = apps.filter(a => current === "الكل" || a.category === current);
-  if (!list.length){ g.innerHTML = `<div class="empty">ماكو تطبيقات هنا بعد</div>`; return; }
-  g.innerHTML = list.map(a => {
-    const letter = esc((a.name || "?").trim().charAt(0));
-    const img = a.image ? `<img src="${esc(a.image)}" alt="" onerror="this.replaceWith(document.createTextNode('${letter}'))">` : letter;
-    return `<a class="card" href="${esc(dl(a.file))}" download>
-      <div class="top"><div class="icon">${img}</div>
-        <div><div class="name">${esc(a.name)}</div>${a.version ? `<div class="ver">v ${esc(a.version)}</div>` : ""}</div></div>
-      <div class="note">${esc(a.note)}</div>
-      <div class="btn">تحميل</div></a>`;
-  }).join("");
-}
-
-// تنقل بالريموت: الأسهم تنقل بين البطاقات والأزرار
-document.addEventListener("keydown", e => {
-  const dirs = {ArrowUp:[0,-1], ArrowDown:[0,1], ArrowLeft:[-1,0], ArrowRight:[1,0]};
-  if (!dirs[e.key]) return;
-  const items = [...document.querySelectorAll(".tab,.card")];
-  const cur = document.activeElement;
-  if (!items.includes(cur)){ (document.querySelector(".card")||items[0])?.focus(); e.preventDefault(); return; }
-  const [dx,dy] = dirs[e.key], r = cur.getBoundingClientRect(), cx = r.left + r.width/2, cy = r.top + r.height/2;
-  let best = null, bestD = Infinity;
-  for (const el of items){
-    if (el === cur) continue;
-    const q = el.getBoundingClientRect(), x = q.left + q.width/2 - cx, y = q.top + q.height/2 - cy;
-    const main = dx ? x*dx : y*dy, side = dx ? Math.abs(y) : Math.abs(x);
-    if (main <= 4) continue;
-    const d = main + side*2;
-    if (d < bestD){ bestD = d; best = el; }
-  }
-  if (best){ best.focus(); best.scrollIntoView({block:"nearest", behavior:"smooth"}); e.preventDefault(); }
-});
-
-fetch("data.json?v=" + Date.now()).then(r => r.json()).then(d => {
-  apps = d; renderTabs(); renderGrid();
-  setTimeout(() => document.querySelector(".card")?.focus(), 50);
-}).catch(() => { document.getElementById("grid").innerHTML = `<div class="empty">صار خطأ بتحميل القائمة</div>`; });
+fetch('apps.json?' + Date.now()).then(r => r.json()).then(d => { apps = d; render(); const f = document.querySelector('.dl'); if (f) f.focus(); });
 </script>
 </body>
 </html>
