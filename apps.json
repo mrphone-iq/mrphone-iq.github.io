@@ -38,10 +38,19 @@
     "icon": "img/xplore.png"
   },
   {
-    "name": "مدير الملفات",
-    "version": "3.8.3",
+  "name": "SmartTube",
+    "version": "30.2",
     "category": "أدوات",
-    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/File.Maneger.3.8.3.apk",
-    "icon": "img/filemanager.png"
-  }
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/SmartTube.30.2.apk",
+    "icon": "",
+    "color": "#ff0000"
+  },
+  {
+  "name": "downloader",
+    "version": "1.5.1",
+    "category": "أدوات",
+    "file": "https://github.com/mrphone-iq/mrphone-iq.github.io/releases/download/apps/downloader.1.5.1.apk",
+    "icon": "",
+    "color": "#ff0000"
+    }
 ]
