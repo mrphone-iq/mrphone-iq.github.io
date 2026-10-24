@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>متجر مستر فون</title>
+<link rel="icon" href="img/logo.jpg">
 <style>
   :root { --bg:#0b0b0b; --card:#1a1a1a; --orange:#ff7a00; --text:#fff; --muted:#aaa; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--text); font-family:Tahoma, Arial, sans-serif; }
   header { padding:24px 32px; border-bottom:3px solid var(--orange); display:flex; align-items:center; gap:16px; }
-  .logo { width:56px; height:56px; border-radius:14px; background:var(--orange); color:#000; font-size:30px; font-weight:bold; display:flex; align-items:center; justify-content:center; }
+  .logo { width:56px; height:56px; border-radius:14px; object-fit:cover; background:#000; }
   h1 { margin:0; font-size:30px; }
   h1 span { color:var(--orange); }
   header p { margin:4px 0 0; color:var(--muted); }
@@ -31,7 +32,7 @@
 </head>
 <body>
 <header>
-  <div class="logo">M</div>
+  <img class="logo" src="img/logo.jpg" alt="مستر فون">
   <div>
     <h1>متجر <span>مستر فون</span></h1>
     <p>اضغط تحميل وبعدين تثبيت</p>
