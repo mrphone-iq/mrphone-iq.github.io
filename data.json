@@ -1,0 +1,26 @@
+[
+  {
+    "name": "X-plore",
+    "version": "4.46.00",
+    "image": "icons/xplore.png",
+    "category": "أدوات",
+    "file": "xplore.apk",
+    "note": "مدير ملفات ونقل التطبيقات للفلاش"
+  },
+  {
+    "name": "Downloader",
+    "version": "1.4.5",
+    "image": "icons/downloader.png",
+    "category": "أدوات",
+    "file": "downloader.apk",
+    "note": ""
+  },
+  {
+    "name": "SmartTube",
+    "version": "",
+    "image": "icons/smarttube.png",
+    "category": "أفلام ومسلسلات",
+    "file": "smarttube.apk",
+    "note": "يوتيوب بدون إعلانات للتلفزيون"
+  }
+]
