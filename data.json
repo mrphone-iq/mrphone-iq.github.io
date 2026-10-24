@@ -14,13 +14,5 @@
     "category": "أدوات",
     "file": "downloader.apk",
     "note": ""
-  },
-  {
-    "name": "SmartTube",
-    "version": "",
-    "image": "icons/smarttube.png",
-    "category": "أفلام ومسلسلات",
-    "file": "smarttube.apk",
-    "note": "يوتيوب بدون إعلانات للتلفزيون"
   }
 ]
